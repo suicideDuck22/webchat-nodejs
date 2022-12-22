@@ -7,7 +7,7 @@
     <title>Enter room</title>
 </head>
 <body>
-    <form action="http://localhost:3000/chat" method="GET">
+    <form action="http://<%= localAddress %>:3000/chat" method="GET">
         <label for="username">Select a username:</label>
         <input name="username" type="text" required="required" maxlength="15">
         <button type="submit">Enter room</button>
