@@ -20,8 +20,13 @@
                 <span id="title-divider"></span>
                 <p>To create an account, fill all fields on form bellow.</p>
             </div>
-            <form action="">
+            <form action="http://172.16.28.21:3000/account/create" method="POST" id="create-user-form">
                 <div id="inputs-container" class="d-flex direction-column align-center">
+                    <div class="d-flex direction-column">
+                        <label for="name">Name:</label>
+                        <input id="name" name="name" type="text" minlength="1" maxlength="35">
+                    </div>
+
                     <div class="d-flex direction-column">
                         <label for="username">Username:</label>
                         <input id="username" name="username" type="text" minlength="1" maxlength="15">
@@ -39,7 +44,7 @@
                 </div>
                 
                 <div id="buttons-container" class="d-flex justify-end">
-                    <button id="create-account-btn" type="submit">Create</button>
+                    <button id="create-account-btn">Create</button>
                     <button id="go-loggin-btn">Go to login</button>
                 </div>
             </form>

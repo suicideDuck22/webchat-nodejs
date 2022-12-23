@@ -2,6 +2,7 @@
 import * as express from 'express';
 import path = require('path');
 import { Socket } from 'socket.io';
+import * as bodyParser from 'body-parser';
 
 import homeRouter from './routes/home';
 import chatRouter from './routes/chat';
@@ -15,10 +16,12 @@ const io = require('socket.io')(http);
 
 app.set('view engine', 'ejs');
 
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, './public')));
 app.use(homeRouter);
 app.use(chatRouter);
 app.use('/account', accountRouter);
-app.use(express.static(path.join(__dirname, './public')));
 
 io.on('connection', (socket: Socket) => {
     console.log('user connected');
