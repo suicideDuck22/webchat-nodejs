@@ -1,0 +1,28 @@
+p, h1 {
+    margin: 0;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: end;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.direction-column {
+    flex-direction: column;
+}
+
+.container {
+    width: calc(1100px - 30px);
+    padding: 0 15px;
+}

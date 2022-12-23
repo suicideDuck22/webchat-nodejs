@@ -1,0 +1,72 @@
+body{
+    background-color: #154c79;
+    font-family: 'Rubik', sans-serif;
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow: hidden;
+}
+
+#header-container {
+    margin-bottom: 18px;
+    max-width: 175px;
+    text-align: center;
+    word-wrap: normal;
+}
+
+#title-divider{
+    background-color: #21130d;
+    display: block;
+    height: 1px;
+    margin: 2px 0;
+    width: 100%;
+}
+
+#form-container{
+    background-color: #2596be;
+    border-radius: 7px;
+    min-width: 350px;
+    min-height: 500px;
+}
+
+label {
+    color: #21130d;
+    font-size: 19px;
+    margin-bottom: 2px;
+}
+
+input {
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+    margin-bottom: 10px;
+    padding: 3px 5px;
+    width: 246px;
+}
+
+#create-account-btn, #go-loggin-btn{
+    border: none;
+    border-radius: 16px;
+    color: #eeeee4;
+    font-size: 15.5px;
+    font-weight: 900;
+    margin-top: 20px;
+    padding: 11px 18px;
+}
+
+#create-account-btn:hover, #go-loggin-btn:hover {
+    cursor: pointer;
+}
+
+#create-account-btn:disabled{
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+#create-account-btn{
+    background-color: #063970;
+}
+
+#go-loggin-btn {
+    margin-left: 4px;
+    background-color: #21130d;
+}

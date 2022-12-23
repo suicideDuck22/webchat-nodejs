@@ -5,6 +5,7 @@ import { Socket } from 'socket.io';
 
 import homeRouter from './routes/home';
 import chatRouter from './routes/chat';
+import accountRouter from './routes/account';
 
 const port = process.env.PORT || 3000;
 
@@ -16,6 +17,7 @@ app.set('view engine', 'ejs');
 
 app.use(homeRouter);
 app.use(chatRouter);
+app.use('/account', accountRouter);
 app.use(express.static(path.join(__dirname, './public')));
 
 io.on('connection', (socket: Socket) => {
@@ -31,5 +33,5 @@ io.on('connection', (socket: Socket) => {
 });
 
 http.listen(port, () => {
-    console.log('Rodando');
+    console.log(`Server running at @ localhost:${port}`);
 });

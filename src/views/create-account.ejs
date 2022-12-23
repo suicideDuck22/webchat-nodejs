@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/create-account.css">
+    <title>Create account</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet">
+</head>
+<body class="d-flex justify-center align-center">
+    <div class="container d-flex justify-center align-center">
+        <div id="form-container" class="d-flex align-center justify-center direction-column">
+            <div id="header-container" class="d-flex justify-center direction-column align-center">
+                <h1>Create an account</h1>
+                <span id="title-divider"></span>
+                <p>To create an account, fill all fields on form bellow.</p>
+            </div>
+            <form action="">
+                <div id="inputs-container">
+                    <div class="d-flex direction-column">
+                        <label for="username">Username:</label>
+                        <input type="text" required="required" minlength="1" maxlength="15">
+                    </div>
+    
+                    <div class="d-flex direction-column">
+                        <label for="password">Password:</label>
+                        <input id="password" name="password" type="password" required="required" minlength="7" maxlength="17">
+                    </div>
+    
+                    <div class="d-flex direction-column">
+                        <label for="password">Confirm password:</label>
+                        <input id="confirm-password" name="confirmPassword" type="password" required="required" minlength="7" maxlength="17">
+                    </div>
+                </div>
+                
+                <div id="buttons-container" class="d-flex justify-end">
+                    <button id="create-account-btn" type="submit">Create</button>
+                    <button id="go-loggin-btn">Go to login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script type="module" src="/script/create-account.js"></script>
+</html>
