@@ -28,6 +28,10 @@ body{
     min-height: 500px;
 }
 
+#inputs-container {
+    max-width: 320px;
+}
+
 label {
     color: #21130d;
     font-size: 19px;
@@ -69,4 +73,13 @@ input {
 #go-loggin-btn {
     margin-left: 4px;
     background-color: #21130d;
+}
+
+.error {
+    background-color: rgba(236, 173, 206, 0.32);
+    border: 1px solid rgba(236, 173, 206, 1);
+    border-radius: 7px;
+    color: rgba(165, 49, 109, 1);
+    cursor: default;
+    padding: 12px;
 }

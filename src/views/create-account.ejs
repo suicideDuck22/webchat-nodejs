@@ -21,20 +21,20 @@
                 <p>To create an account, fill all fields on form bellow.</p>
             </div>
             <form action="">
-                <div id="inputs-container">
+                <div id="inputs-container" class="d-flex direction-column align-center">
                     <div class="d-flex direction-column">
                         <label for="username">Username:</label>
-                        <input type="text" required="required" minlength="1" maxlength="15">
+                        <input id="username" name="username" type="text" minlength="1" maxlength="15">
                     </div>
     
                     <div class="d-flex direction-column">
                         <label for="password">Password:</label>
-                        <input id="password" name="password" type="password" required="required" minlength="7" maxlength="17">
+                        <input id="password" name="password" type="password" minlength="7" maxlength="17">
                     </div>
     
                     <div class="d-flex direction-column">
                         <label for="password">Confirm password:</label>
-                        <input id="confirm-password" name="confirmPassword" type="password" required="required" minlength="7" maxlength="17">
+                        <input id="confirm-password" name="confirmPassword" type="password" minlength="7" maxlength="17">
                     </div>
                 </div>
                 
